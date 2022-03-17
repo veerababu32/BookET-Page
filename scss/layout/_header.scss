@@ -1,0 +1,47 @@
+.header{
+    background-color: $bg-violet-color;
+
+    a{
+        cursor: pointer;
+    }
+
+    &__navbar{
+        @extend %container;
+    }
+
+    &__navbar-booket-icon{
+        width: 32px;
+        height: 50px;
+    }
+
+    &__navbar-search-sub-title{
+        color: $light-grey-color;
+    }
+
+    &__navbar-search-icon{
+        background-color: $bg-light-orange-color;
+        width: 56px;
+        height: 56px;
+    }
+
+    .bi-search::before {
+        content: "\f52a";
+        color: $primary-color-white;
+    }
+
+    .bi-heart::before {
+        content: "\f417";
+        font-size: 28px;
+        color: $primary-color-white;
+    }
+
+    .bi-bell::before {
+        content: "\f18a";
+        font-size: 28px;
+        color: $primary-color-white;
+    }
+
+    &__navbar-right-selector{
+        background-color: $bg-violet-color;
+    }
+}

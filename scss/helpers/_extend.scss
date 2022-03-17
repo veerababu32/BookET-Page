@@ -1,0 +1,21 @@
+%container {
+    max-width: 1246px;
+    width: 100%;
+    padding-inline: 15px;
+    margin: 0 auto;
+}
+
+%like-icon{
+    position: absolute;
+    top: 162px;
+    right: 12px;
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    box-shadow: $box-shadow-properties;
+    background-color: $primary-color-white;
+    &:hover{
+        background-color: $bg-red-color;
+        cursor: pointer;
+    }
+}
