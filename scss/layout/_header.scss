@@ -14,8 +14,32 @@
         height: 50px;
     }
 
-    &__navbar-search-sub-title{
+    &__navbar-search-title{
+        width: fit-content;
+    }
+
+    &__navbar-search-date{
         color: $light-grey-color;
+        width: 145px !important;
+        &::placeholder{
+            color: $light-grey-color;
+        }
+    }
+
+    &__navbar-search-location{
+        color: $light-grey-color;
+        width: 170px;
+        &::placeholder{
+            color: $light-grey-color;
+        }
+    }
+
+    &__navbar-search-looking{
+        color: $light-grey-color;
+        width: 250px;
+        &::placeholder{
+            color: $light-grey-color;
+        }
     }
 
     &__navbar-search-icon{
@@ -25,23 +49,25 @@
     }
 
     .bi-search::before {
-        content: "\f52a";
+        font-size: 22px;
         color: $primary-color-white;
     }
 
     .bi-heart::before {
-        content: "\f417";
         font-size: 28px;
         color: $primary-color-white;
     }
 
     .bi-bell::before {
-        content: "\f18a";
         font-size: 28px;
         color: $primary-color-white;
     }
 
     &__navbar-right-selector{
         background-color: $bg-violet-color;
+        border: none;
+        &:hover{
+            cursor: pointer;
+        }
     }
 }

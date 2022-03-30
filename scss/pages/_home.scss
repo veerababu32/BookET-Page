@@ -7,11 +7,12 @@
 
     .carousel-indicators{
         width: auto;
+        margin: 0;
     }
 
     .carousel-indicators [data-bs-target]{
-        width: 12px;
-        height: 12px;
+        width: 8px;
+        height: 8px;
         border-radius: 50%;
     }
 
@@ -34,24 +35,28 @@
     &__view-all{
         color: $light-orange-color;
         font-weight: 600;
+        &:hover{
+            color: $bg-light-orange-color;
+        }
     }
 
     &__line1{
-        border: $border-line-properties;
+        @extend %hr-line;
         width: 48px;
     }
 
     &__line2{
-        border: $border-line-properties;
+        @extend %hr-line;
         width: 24px;
     }
 
-    &__events{
+    &__cards{
         background-color: $bg-violet-color;
-        width: 200px;
-        &:nth-child(5){
-            margin-right: 0;
-        }
+        width: 220px;
+        max-width: 232px;
+        height: 190px;
+        max-height: 203px;
+        padding: 24px 16px 16px 24px;
     }
 
     &__description{
@@ -81,6 +86,39 @@
     }
 }
 
+@media screen and (max-width:768px) and (min-width:576px) {
+    .event-category{
+        &__cards{
+            flex-direction: row !important;
+            max-width: 310px;
+            height: 116px;
+            flex-grow: 1;
+            padding: 10px;
+        }
+
+        &__card-body{
+            width: 50%;
+        }
+
+        &__description{
+            margin-bottom: 0 !important;
+        }
+
+        &__section{
+            flex-direction: row-reverse;
+            justify-content: normal !important;
+        }
+
+        &__event-img{
+            margin: 0 10px 0 0 !important;
+        }
+
+        &__arrow{
+            align-self: center;
+        }
+    }
+}
+
 .popular-event{
     @extend %container;
 
@@ -91,29 +129,28 @@
     &__view-all{
         color: $light-orange-color;
         font-weight: 600;
+        &:hover{
+            color: $bg-light-orange-color;
+        }
     }
 
     &__line1{
-        border: $border-line-properties;
+        @extend %hr-line;
         width: 48px;
     }
 
     &__line2{
-        border: $border-line-properties;
+        @extend %hr-line;
         width: 24px;
     }
 
-    &__events{
-        width: 292px;
+    &__cards{
+        width: 266px;
+        max-width: 292px;
     }
 
     &__img-section{
         position: relative;
-    }
-
-    &__img{
-        width: 292px;
-        height: 184px;
     }
 
     &__like-icon{
@@ -127,21 +164,56 @@
     &__sub-heading{
         color: $light-orange-color;
         font-size: 12px;
+        font-weight: 600;
     }
 
     &__heading{
         color: $little-dark-black;
         font-size: 16px;
-    }
-
-    .bi-share::before {
-        content: "\f52e";
-        margin: 20px 20px 0 0;
-        font-size: 24px;
+        font-weight: 600;
     }
 
     &__event-place{
+        color: $grey-color;
         font-size: 12px;
+        font-weight: 600;
+    }
+
+    .bi-share::before {
+        margin: 20px 20px 0 0;
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:576px) {
+    .popular-event{
+        &__img-section{
+            margin-bottom: 0 !important;
+        }
+
+        &__like-icon{
+            top: 70%;
+            right: 0;
+            left: 91%;
+        }
+
+        &__cards{
+            flex-direction: row;
+            max-width: initial;
+        }
+
+        &__card-body{
+            flex-direction: column;
+            padding: 10px !important;
+        }
+
+        &__share-icon{
+            align-self: flex-end;
+        }
+
+        .bi-share::before {
+            margin: 0;
+        }
     }
 }
 
@@ -155,30 +227,28 @@
     &__view-all{
         color: $light-orange-color;
         font-weight: 600;
+        &:hover{
+            color: $bg-light-orange-color;
+        }
     }
 
     &__line1{
-        border: $border-line-properties;
+        @extend %hr-line;
         width: 48px;
     }
 
     &__line2{
-        border: $border-line-properties;
+        @extend %hr-line;
         width: 24px;
     }
 
-    &__events{
-        width: 292px;
+    &__cards{
+        width: 266px;
+        max-width: 292px;
     }
 
     &__img-section{
         position: relative;
-        margin-bottom: 12px;
-    }
-
-    &__img{
-        width: 292px;
-        height: 184px;
     }
 
     &__like-icon{
@@ -192,21 +262,56 @@
     &__sub-heading{
         color: $light-orange-color;
         font-size: 12px;
+        font-weight: 600;
     }
 
     &__heading{
-        color: #231000;
+        color: $little-dark-black;
         font-size: 16px;
-    }
-
-    .bi-share::before {
-        content: "\f52e";
-        margin: 20px 20px 0 0;
-        font-size: 24px;
+        font-weight: 600;
     }
 
     &__event-place{
+        color: $grey-color;
         font-size: 12px;
+        font-weight: 600
+    }
+
+    .bi-share::before {
+        margin: 20px 20px 0 0;
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:576px) {
+    .recommended-event{
+        &__img-section{
+            margin-bottom: 0 !important;
+        }
+
+        &__like-icon{
+            top: 70%;
+            right: 0;
+            left: 91%;
+        }
+
+        &__cards{
+            flex-direction: row;
+            max-width: initial;
+        }
+
+        &__card-body{
+            flex-direction: column;
+            padding: 10px !important;
+        }
+
+        &__share-icon{
+            align-self: flex-end;
+        }
+
+        .bi-share::before {
+            margin: 0;
+        }
     }
 }
 
@@ -220,29 +325,28 @@
     &__view-all{
         color: $light-orange-color;
         font-weight: 600;
+        &:hover{
+            color: $bg-light-orange-color;
+        }
     }
 
     &__line1{
-        border: $border-line-properties;
+        @extend %hr-line;
         width: 48px;
     }
 
     &__line2{
-        border: $border-line-properties;
+        @extend %hr-line;
         width: 24px;
     }
 
-    &__events{
-        width: 292px;
+    &__cards{
+        width: 266px;
+        max-width: 292px;
     }
 
     &__img-section{
         position: relative;
-    }
-
-    &__img{
-        width: 292px;
-        height: 184px;
     }
 
     &__like-icon{
@@ -256,21 +360,56 @@
     &__sub-heading{
         color: $light-orange-color;
         font-size: 12px;
+        font-weight: 600;
     }
 
     &__heading{
-        color: #231000;
+        color: $little-dark-black;
         font-size: 16px;
-    }
-
-    .bi-share::before {
-        content: "\f52e";
-        margin: 20px 20px 0 0;
-        font-size: 24px;
+        font-weight: 600;
     }
 
     &__event-place{
+        color: $grey-color;
         font-size: 12px;
+        font-weight: 600;
+    }
+
+    .bi-share::before {
+        margin: 20px 20px 0 0;
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:576px) {
+    .nearby-event{
+        &__img-section{
+            margin-bottom: 0 !important;
+        }
+
+        &__like-icon{
+            top: 70%;
+            right: 0;
+            left: 91%;
+        }
+
+        &__cards{
+            flex-direction: row;
+            max-width: initial;
+        }
+
+        &__card-body{
+            flex-direction: column;
+            padding: 10px !important;
+        }
+
+        &__share-icon{
+            align-self: flex-end;
+        }
+
+        .bi-share::before {
+            margin: 0;
+        }
     }
 }
 
@@ -284,29 +423,28 @@
     &__view-all{
         color: $light-orange-color;
         font-weight: 600;
+        &:hover{
+            color: $bg-light-orange-color;
+        }
     }
 
     &__line1{
-        border: $border-line-properties;
+        @extend %hr-line;
         width: 48px;
     }
 
     &__line2{
-        border: $border-line-properties;
+        @extend %hr-line;
         width: 24px;
     }
 
-    &__events{
-        width: 292px;
+    &__cards{
+        width: 266px;
+        max-width: 292px;
     }
 
     &__img-section{
         position: relative;
-    }
-
-    &__img{
-        width: 292px;
-        height: 184px;
     }
 
     &__like-icon{
@@ -320,21 +458,55 @@
     &__sub-heading{
         color: $light-orange-color;
         font-size: 12px;
+        font-weight: 600;
     }
 
     &__heading{
-        color: #231000;
+        color: $little-dark-black;
         font-size: 16px;
-    }
-
-    .bi-share::before {
-        content: "\f52e";
-        margin: 20px 20px 0 0;
-        font-size: 24px;
+        font-weight: 600;
     }
 
     &__event-place{
+        color: $grey-color;
         font-size: 12px;
+    }
+
+    .bi-share::before {
+        margin: 20px 20px 0 0;
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:576px) {
+    .featured-event{
+        &__img-section{
+            margin-bottom: 0 !important;
+        }
+
+        &__like-icon{
+            top: 70%;
+            right: 0;
+            left: 91%;
+        }
+
+        &__cards{
+            flex-direction: row;
+            max-width: initial;
+        }
+
+        &__card-body{
+            flex-direction: column;
+            padding: 10px !important;
+        }
+
+        &__share-icon{
+            align-self: flex-end;
+        }
+
+        .bi-share::before {
+            margin: 0;
+        }
     }
 }
 
@@ -348,61 +520,75 @@
     &__view-all{
         color: $light-orange-color;
         font-weight: 600;
+        &:hover{
+            color: $bg-light-orange-color;
+        }
     }
 
     &__line1{
-        border: $border-line-properties;
+        @extend %hr-line;
         width: 48px;
     }
 
     &__line2{
-        border: $border-line-properties;
+        @extend %hr-line;
         width: 24px;
     }
 
-    &__events{
-        width: 232px;
+    &__card{
+        width: 220px;
+        max-width: 300px;
+        height: 344px;
+        border-radius: 10px;
+        padding: 13px 16px;
     }
 
-    &__cross-icon{
-        align-self: flex-end;
+    &__card-close-btn{
+        font-size: 16px;
+        color: $light-grey-color;
+        background-color: transparent;
+        border: none;
+        padding: 0;
         &:hover{
-            cursor: pointer;
+            color: $dark-black;
         }
     }
 
-    .bi-x::before {
-        font-size: 32px;
-        color: $grey-muted-color;
-        align-self: flex-end;
+    &__card-img-bg-section{
+        height: 56px;
+        width: 56px;
+        background-color: $bg-grey-color;
     }
 
-    &__img{
+    &__card-img{
         width: 56px;
         height: 56px;
     }
 
-    &__card-name{
+    &__card-booket-img{
+        width: 22px;
+        height: 32px;
+        mix-blend-mode: luminosity;
+    }
+
+    &__card-title{
         font-size: 16px;
         color: $little-dark-black;
+        font-weight: 600;
     }
 
-    &__followers{
+    &__card-text{
         font-size: 14px;
+        color: $dark-grey-color;
     }
 
-    &__button{
+    &__card-button{
         color: $light-orange-color;
         border-color: $light-orange-color;
+        font-weight: 600;
         &:hover{
             background-color: $light-orange-color;
             color: $primary-color-white;
         }
-    }
-
-    &__img-section{
-        height: 56px;
-        width: 56px;
-        background-color: $bg-grey-color;
     }
 }

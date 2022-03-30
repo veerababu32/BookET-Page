@@ -9,579 +9,593 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="container-fluid">
-    <!-- Header-section -->
-    <header class="row header mb-5 m-0">
-        <nav class="navbar navbar-expand-lg navbar-light header__navbar d-flex justify-content-between ps-2 pe-2 pt-4 pb-4 ps-xl-o pe-xl-0">
-            <div class="d-flex">
-                <a href="#" class="align-self-center">
+<body>
+    <div class="container-fluid">
+        <!-- Header-section -->
+        <header class="row header mb-5 m-0">
+            <nav class="navbar navbar-expand-xl navbar-light header__navbar d-flex pt-4 pb-4">
+                <a href="javascript:void(0)" class="align-self-center me-4">
                     <img src="images/booket-icon.png" alt="booket-icon" class="me-2 header__navbar-booket-icon">
                 </a>
-                <div class="d-lg-flex d-flex bg-white rounded-pill p-2 ps-5 align-items-center d-none">
-                    <div class="me-lg-3">
-                        <h6 class="m-0 mb-1">Date</h6>
-                        <p class="fs-6 m-0 header__navbar-search-sub-title">I Want to go out?</p>
-                    </div>
-                    <div class="me-lg-3">
-                        <h6 class="m-0 mb-1">Location</h6>
-                        <p class="fs-6 m-0 header__navbar-search-sub-title">My current location?</p>
-                    </div>
-                    <div class="me-lg-3">
-                        <h6 class="m-0 mb-1">Looking for</h6>
-                        <p class="fs-6 m-0 header__navbar-search-sub-title">What are you in the mood for?</p>
-                    </div>
-                    <div class="d-flex justify-content-center align-items-center header__navbar-search-icon ms-5 ms-md-0 rounded-pill">
-                        <a href="#"><i class="bi bi-search"></i></a>
-                    </div>
-                </div>
-            </div>
-            <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse flex-grow-0" id="navbarTogglerDemo02">
-                <ul class="d-lg-flex flex-lg-row d-flex flex-column align-items-center mb-0 p-0">
-                    <li class="d-flex flex-column text-center me-xl-4 mb-xl-0 mt-xl-0 m-0 mt-4 mb-4">
-                        <div><img src="images/host-event.png" alt="host-event" class="text-center mb-1"></div>
-                        <a href="#" class="fw-normal text-white m-0 text-decoration-none">Host Event</a>
-                    </li>
-                    <li class="d-flex flex-column text-center me-xl-4 mb-xl-0 mt-xl-0 m-0 mb-4">
-                        <div class="mb-1"><i class="bi bi-heart"></i></div>
-                        <a href="#" class="fw-normal text-white m-0 text-decoration-none">Wishlist</a>
-                    </li>
-                    <li class="d-flex flex-column text-center me-xl-4 mb-xl-0 mt-xl-0 m-0 mb-4">
-                        <div class="mb-1"><i class="bi bi-bell"></i></div>
-                        <a href="#" class="fw-normal text-white m-0 text-decoration-none">Notification</a>
-                    </li>
-                    <li class="d-flex flex-column text-center mb-xl-0 mt-xl-0 m-0">
-                        <div class="mb-1"><img src="images/profile-pic.png" alt="profile-pic"></div>
-                        <select id="profiles" name="profiles" class="header__navbar-right-selector text-white">
-                            <option value="profile">Profile</option>
-                            <option value="logout">Logout</option>
-                          </select>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <!-- Banner-section -->
-        <section id="carouselExampleIndicators" class="row carousel slide banner mb-5" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="radio" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="radio" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="radio" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="images/banner-img.png" alt="Manoj-Bajpayee-img">
-              </div>
-              <div class="carousel-item">
-                <img src="images/banner-img.png" alt="Manoj-Bajpayee-img">
-              </div>
-              <div class="carousel-item">
-                <img src="images/banner-img.png" alt="Manoj-Bajpayee-img">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <i class="bi bi-arrow-left-circle d-none d-md-block" aria-hidden="true"></i>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <i class="bi bi-arrow-right-circle d-none d-md-block" aria-hidden="true"></i>
-              <span class="visually-hidden">Next</span>
-            </button>
-        </section>
-        <!-- Event-category-section -->
-        <section class="row event-category mb-5">
-            <div class="d-flex justify-content-between mb-2">
-                <h4 class="fw-bold m-0 event-category__title">Event Category</h4>
-                <a href="#" class="h6 m-0 align-self-center text-decoration-none event-category__view-all">VIEW ALL</a>
-            </div>
-            <div class="d-flex mb-2">
-                <hr class="event-category__line1 me-2 m-0 rounded-pill">
-                <hr class="event-category__line2 m-0 rounded-pill">
-            </div>
-            <div class="d-flex justify-content-xl-between justify-content-center flex-wrap">
-                <div class="d-lg-flex flex-lg-column justify-content-lg-start align-items-lg-start d-sm-flex flex-sm-column justify-content-sm-center align-items-sm-center col-lg-2 p-2 me-md-3 me-sm-4 mb-sm-4 mb-2 rounded-3 event-category__events">
-                    <h5 class="m-0 fw-normal h4 text-white">Music</h5>
-                    <p class="event-category__description m-0 mb-2 text-white">24 Events Nearby</p>
-                    <div class="d-lg-flex flex-lg-row justify-content-lg-between d-md-flex flex-md-column-reverse d-sm-flex flex-sm-column-reverse d-xs-flex flex-xs-column-reverse align-items-sm-center d-flex justify-content-between align-items-center event-category__section">
-                        <a href="#" class="d-flex justify-content-center align-items-center rounded-pill event-category__arrow"><i class="bi bi-arrow-right"></i></a>
-                        <img src="images/event-category-music-img.png" alt="music-img" class="mb-sm-1 event-category__event-img">
-                    </div>
-                </div>
-                <div class="d-lg-flex flex-lg-column justify-content-lg-start align-items-lg-start d-sm-flex flex-sm-column justify-content-sm-center align-items-sm-center col-lg-2 p-2 me-md-3 me-sm-4 mb-sm-4 mb-2 rounded-3 event-category__events">
-                    <h4 class="m-0 fw-normal h4 text-white text-lg-start text-sm-center">Business & Startups</h4>
-                    <p class="event-category__description m-0 text-white">36 Events Nearby</p>
-                    <div class="d-lg-flex flex-lg-row justify-content-lg-between d-md-flex flex-md-column-reverse d-sm-flex flex-sm-column-reverse d-xs-flex flex-xs-column-reverse align-items-sm-center d-flex justify-content-between align-items-center event-category__section">
-                        <a href="#" class="d-flex justify-content-center align-items-center rounded-pill event-category__arrow"><i class="bi bi-arrow-right"></i></a>
-                        <img src="images/event-category-business-img.png" alt="business-img" class="event-category__event-img">
-                    </div>
-                </div>
-                <div class="d-lg-flex flex-lg-column justify-content-lg-start align-items-lg-start d-sm-flex flex-sm-column justify-content-sm-center align-items-sm-center col-lg-2 p-2 me-md-3 me-sm-4 mb-sm-4 mb-2 rounded-3 event-category__events">
-                    <h4 class="m-0 fw-normal h4 text-white">Arts & Culture</h4>
-                    <p class="event-category__description m-0 mb-2 text-white">36 Events Nearby</p>
-                    <div class="d-lg-flex flex-lg-row justify-content-lg-between d-md-flex flex-md-column-reverse d-sm-flex flex-sm-column-reverse d-xs-flex flex-xs-column-reverse align-items-sm-center d-flex justify-content-between align-items-center event-category__section">
-                        <a href="#" class="d-flex justify-content-center align-items-center rounded-pill event-category__arrow"><i class="bi bi-arrow-right"></i></a>
-                        <img src="images/event-category-art-img.png" alt="art-img" class="mb-sm-1 event-category__event-img">
-                    </div>
-                </div>
-                <div class="d-lg-flex flex-lg-column justify-content-lg-start align-items-lg-start d-sm-flex flex-sm-column justify-content-sm-center align-items-sm-center col-lg-2 p-2 me-md-3 me-sm-4 mb-sm-4 mb-2 rounded-3 event-category__events">
-                    <h4 class="m-0 fw-normal h4 text-white">Film & Media</h4>
-                    <p class="event-category__description m-0 mb-2 text-white">36 Events Nearby</p>
-                    <div class="d-lg-flex flex-lg-row justify-content-lg-between d-md-flex flex-md-column-reverse d-sm-flex flex-sm-column-reverse d-xs-flex flex-xs-column-reverse align-items-sm-center d-flex justify-content-between align-items-center event-category__section">
-                        <a href="#" class="d-flex justify-content-center align-items-center rounded-pill event-category__arrow"><i class="bi bi-arrow-right"></i></a>
-                        <img src="images/event-category-social-ideas-img.png" alt="social-ideas-img" class="mb-sm-1 event-category__event-img">
-                    </div>
-                </div>
-                <div class="d-lg-flex flex-lg-column justify-content-lg-start align-items-lg-start d-sm-flex flex-sm-column justify-content-sm-center align-items-sm-center col-lg-2 p-2 me-md-3 me-sm-4 mb-sm-4 rounded-3 event-category__events">
-                    <h4 class="m-0 fw-normal h4 text-white">Food & Drink</h4>
-                    <p class="event-category__description m-0 mb-2 text-white">36 Events Nearby</p>
-                    <div class="d-lg-flex flex-lg-row justify-content-lg-between d-md-flex flex-md-column-reverse d-sm-flex flex-sm-column-reverse d-xs-flex flex-xs-column-reverse align-items-sm-center d-flex justify-content-between align-items-center event-category__section">
-                        <a href="#" class="d-flex justify-content-center align-items-center rounded-pill event-category__arrow"><i class="bi bi-arrow-right"></i></a>
-                        <img src="images/event-category-special-event-img.png" alt="special-event-img" class="mb-sm-1 event-category__event-img">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Popular-event-section -->
-        <section class="row popular-event mb-5">
-            <div class="d-flex justify-content-between mb-2">
-                <h4 class="fw-bold m-0 popular-event__title">Popular Event</h4>
-                <a href="#" class="h6 m-0 align-self-center text-decoration-none popular-event__view-all">VIEW ALL</a>
-            </div>
-            <div class="d-flex mb-2">
-                <hr class="popular-event__line1 me-2 m-0 rounded-pill">
-                <hr class="popular-event__line2 m-0 rounded-pill">
-            </div>
-            <div class="d-flex justify-content-xl-between justify-content-center flex-wrap">
-                <div class="popular-event__events mb-xl-0 me-xl-0 mb-lg-4 me-lg-4 mb-md-4 me-md-4 mb-4">
-                    <div class="popular-event__img-section mb-3">
-                        <img src="images/popular-events-festival-img.png" alt="festival-img" class="popular-event__img">
-                        <i class="d-flex justify-content-center align-items-center text-muted bi bi-heart rounded-pill popular-event__like-icon"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div class="d-inline-block popular-event__content-section">
-                            <h6 class="fw-normal m-0 popular-event__sub-heading">SUN, NOV 15, 11:00 AM</h6>
-                            <h4 class="fw-bold m-0 popular-event__heading">Great Qatar Food Festival</h4>
-                            <p class="text-muted fw-normal m-0 popular-event__event-place">The Pearl Qatar</p>
+                <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse flex-column justify-content-center flex-xl-row justify-content-xl-between" id="navbarTogglerDemo02">
+                    <form class="d-flex bg-white rounded-pill ps-4 p-2 mt-4 ms-auto me-auto mt-xl-0 ms-xl-0 me-xl-0" style="width: fit-content;">
+                        <div class="flex-column justify-content-center d-none d-md-flex ms-2 me-3">
+                            <label for="date" class="h6 m-0 header__navbar-search-title">Date</label>
+                            <input type="text" name="Date" id="date" placeholder="I Want to go out?" class="w-auto fs-6 m-0 border-0 header__navbar-search-date">
+                        </div>
+                        <div class="flex-column justify-content-center d-none d-md-flex me-3">
+                            <label for="location" class="h6 m-0 header__navbar-search-title">Location</label>
+                            <input type="text" name="Location" id="location" placeholder="My current location?" class="fs-6 m-0 border-0 header__navbar-search-location">
+                        </div>
+                        <div class="flex-column justify-content-center d-none d-md-flex me-3">
+                            <label for="lookingFor" class="h6 m-0 header__navbar-search-title">Looking for</label>
+                            <input type="text" name="Looking for" id="lookingFor" placeholder="What are you in the mood for?" class="fs-6 m-0 border-0 header__navbar-search-looking">
+                        </div>
+                        <div class="d-flex mt-auto mb-auto d-md-none">
+                            <input type="text" class="border-0 " placeholder="search">
                         </div>
                         <div>
-                            <a href="#" class="text-muted text-decoration-none"><i class="bi bi-share"></i></a>
+                            <button class="header__navbar-search-icon rounded-pill border-0" type="submit"><i class="bi bi-search"></i></button>
                         </div>
-                    </div>
+                    </form>
+                    <ul class="d-xl-flex flex-xl-row d-flex flex-column align-items-center mb-0 p-0">
+                        <li class="d-flex flex-column text-center me-xl-3 mb-xl-0 mt-xl-0 m-0 mt-4 mb-4">
+                            <div><img src="images/host-event.png" alt="host-event" class="text-center mb-1"></div>
+                            <a href="javascript:void(0)" class="fw-normal text-white m-0 text-decoration-none">Host Event</a>
+                        </li>
+                        <li class="d-flex flex-column text-center me-xl-3 mb-xl-0 mt-xl-0 m-0 mb-4">
+                            <div class="mb-1"><i class="bi bi-heart"></i></div>
+                            <a href="javascript:void(0)" class="fw-normal text-white m-0 text-decoration-none">Wishlist</a>
+                        </li>
+                        <li class="d-flex flex-column text-center me-xl-3 mb-xl-0 mt-xl-0 m-0 mb-4">
+                            <div class="mb-1"><i class="bi bi-bell"></i></div>
+                            <a href="javascript:void(0)" class="fw-normal text-white m-0 text-decoration-none">Notification</a>
+                        </li>
+                        <li class="d-flex flex-column text-center mb-xl-0 mt-xl-0 m-0">
+                            <label class="mb-1" for="profiles"><img src="images/profile-pic.png" alt="profile-pic"></label>
+                            <select id="profiles" name="profile" class="header__navbar-right-selector text-white">
+                                <option value="profile">Profile</option>
+                                <option value="logout">Logout</option>
+                            </select>
+                        </li>
+                    </ul>
                 </div>
-                <div class="popular-event__events mb-xl-0 me-xl-0 mb-lg-4 me-lg-4 mb-md-4 me-md-4 mb-4">
-                    <div class="popular-event__img-section mb-3">
-                        <img src="images/popular-event-boat-img.png" alt="boat-img" class="popular-event__img">
-                        <i class="d-flex justify-content-center align-items-center text-muted bi bi-heart rounded-pill popular-event__like-icon"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div class="d-inline-block popular-event__content-section">
-                            <h4 class="fw-normal m-0 popular-event__sub-heading">SUN, NOV 15, 11:00 AM</h4>
-                            <h2 class="fw-bold m-0 popular-event__heading">QAWARIB Qatar International Boat Show 2021</h2>
-                            <p class="text-muted fw-normal m-0 popular-event__event-place">AI Shaqab</p>
-                        </div>
-                        <div>
-                            <a href="#" class="text-muted text-decoration-none"><i class="bi bi-share"></i></a>
-                        </div>
-                    </div>
+            </nav>
+        </header>
+        <!-- Home-section -->
+        <main>
+            <!-- Banner-section -->
+            <section id="carouselExampleIndicators" class="row carousel slide banner mb-5" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
-                <div class="popular-event__events mb-xl-0 me-xl-0 mb-lg-4 me-lg-4 mb-md-4 me-md-4 mb-4">
-                    <div class="popular-event__img-section mb-3">
-                        <img src="images/popular-event-horse-img.png" alt="horse-img" class="popular-event__img">
-                        <i class="d-flex justify-content-center align-items-center text-muted bi bi-heart rounded-pill popular-event__like-icon"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div class="d-inline-block popular-event__content-section">
-                            <h4 class="fw-normal m-0 popular-event__sub-heading">SUN, NOV 15, 11:00 AM</h4>
-                            <h2 class="fw-bold m-0 popular-event__heading">Commercial Bank CHI AI SHAQAB Presented by Longines</h2>
-                            <p class="text-muted fw-normal m-0 popular-event__event-place">Mosman Park, Sydney</p>
-                        </div>
-                        <div>
-                            <a href="#" class="text-muted text-decoration-none"><i class="bi bi-share"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="popular-event__events mb-xl-0 me-xl-0 mb-lg-4 me-lg-4 mb-md-4 me-md-4">
-                    <div class="popular-event__img-section mb-3">
-                        <img src="images/popular-event-tasty-street-img.png" alt="tasty-street-img" class="popular-event__img">
-                        <i class="d-flex justify-content-center align-items-center text-muted bi bi-heart rounded-pill popular-event__like-icon"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div class="d-inline-block popular-event__content-section">
-                            <h4 class="fw-normal m-0 popular-event__sub-heading">SUN, NOV 15, 11:00 AM</h4>
-                            <h2 class="fw-bold m-0 popular-event__heading">Tasty Street Qatar at Katara Cultural Village</h2>
-                            <p class="text-muted fw-normal m-0 popular-event__event-place">AI Gannas</p>
-                        </div>
-                        <div>
-                            <a href="#" class="text-muted text-decoration-none"><i class="bi bi-share"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Recommended-event-section -->
-        <section class="row recommended-event mb-5">
-            <div class="d-flex justify-content-between mb-2">
-                <h4 class="fw-bold m-0 recommended-event__title">Recommended Events</h4>
-                <a href="#" class="h6 m-0 align-self-center text-decoration-none recommended-event__view-all">VIEW ALL</a>
-            </div>
-            <div class="d-flex mb-2">
-                <hr class="recommended-event__line1 me-2 m-0 rounded-pill">
-                <hr class="recommended-event__line2 m-0 rounded-pill">
-            </div>
-            <div class="d-flex justify-content-xl-between justify-content-center flex-wrap">
-                <div class="recommended-event__events mb-xl-0 me-xl-0 mb-lg-4 me-lg-4 mb-md-4 me-md-4 mb-4">
-                    <div class="recommended-event__img-section mb-3">
-                        <img src="images/recommended-event-handicrafts-img.png" alt="handicrafts-img" class="recommended-event__img">
-                        <i class="d-flex justify-content-center align-items-center text-muted bi bi-heart rounded-pill recommended-event__like-icon"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div class="d-inline-block recommended-event__content-section">
-                            <h4 class="fw-normal m-0 recommended-event__sub-heading">SUN, NOV 15, 11:00 AM</h4>
-                            <h2 class="fw-bold m-0 recommended-event__heading">The International Handicrafts & Traditional Productions Cultural ..</h2>
-                            <p class="text-muted fw-normal m-0 recommended-event__event-place">Mosman Park, Sydney</p>
-                        </div>
-                        <div>
-                            <a href="#" class="text-muted text-decoration-none"><i class="bi bi-share"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="recommended-event__events mb-xl-0 me-xl-0 mb-lg-4 me-lg-4 mb-md-4 me-md-4 mb-4">
-                    <div class="recommended-event__img-section mb-3">
-                        <img src="images/recommended-event-expo-img.png" alt="expo-img" class="recommended-event__img">
-                        <i class="d-flex justify-content-center align-items-center text-muted bi bi-heart rounded-pill recommended-event__like-icon"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div class="d-inline-block recommended-event__content-section">
-                            <h4 class="fw-normal m-0 recommended-event__sub-heading">SUN, NOV 15, 11:00 AM</h4>
-                            <h2 class="fw-bold m-0 recommended-event__heading">International Horticultural Expo Doha</h2>
-                            <p class="text-muted fw-normal m-0 recommended-event__event-place">The Pearl Qatar</p>
-                        </div>
-                        <div>
-                            <a href="#" class="text-muted text-decoration-none"><i class="bi bi-share"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="recommended-event__events mb-xl-0 me-xl-0 mb-lg-4 me-lg-4 mb-md-4 me-md-4 mb-4">
-                    <div class="recommended-event__img-section mb-3">
-                        <img src="images/recommended-event-farmers-img.png" alt="farmers-img" class="recommended-event__img">
-                        <i class="d-flex justify-content-center align-items-center text-muted bi bi-heart rounded-pill recommended-event__like-icon"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div class="d-inline-block recommended-event__content-section">
-                            <h4 class="fw-normal m-0 recommended-event__sub-heading">SUN, NOV 15, 11:00 AM</h4>
-                            <h2 class="fw-bold m-0 recommended-event__heading">Torba Farmers Market 2020</h2>
-                            <p class="text-muted fw-normal m-0 recommended-event__event-place">Ceremonial Court, Education City</p>
-                        </div>
-                        <div>
-                            <a href="#" class="text-muted text-decoration-none"><i class="bi bi-share"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="recommended-event__events mb-xl-0 me-xl-0 mb-lg-4 me-lg-4 mb-md-4 me-md-4">
-                    <div class="recommended-event__img-section mb-3">
-                        <img src="images/recommended-event-sea-caves-img.png" alt="sea-caves-img" class="recommended-event__img">
-                        <i class="d-flex justify-content-center align-items-center text-muted bi bi-heart rounded-pill recommended-event__like-icon"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div class="d-inline-block recommended-event__content-section">
-                            <h4 class="fw-normal m-0 recommended-event__sub-heading">SUN, NOV 15, 11:00 AM</h4>
-                            <h2 class="fw-bold m-0 recommended-event__heading">Sea Caves Water Park</h2>
-                            <p class="text-muted fw-normal m-0 recommended-event__event-place">Desert Falls Water and Adventure park</p>
-                        </div>
-                        <div>
-                            <a href="#" class="text-muted text-decoration-none"><i class="bi bi-share"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Nearby-event-section -->
-        <section class="row nearby-event mb-5">
-            <div class="d-flex justify-content-between mb-2">
-                <h4 class="fw-bold m-0 nearby-event__title">Nearby Events</h4>
-                <a href="#" class="h6 m-0 align-self-center text-decoration-none nearby-event__view-all">VIEW ALL</a>
-            </div>
-            <div class="d-flex mb-2">
-                <hr class="nearby-event__line1 me-2 m-0 rounded-pill">
-                <hr class="nearby-event__line2 m-0 rounded-pill">
-            </div>
-            <div class="d-flex justify-content-xl-between justify-content-center flex-wrap">
-                <div class="nearby-event__events mb-xl-0 me-xl-0 mb-lg-4 me-lg-4 mb-md-4 me-md-4 mb-4">
-                    <div class="nearby-event__img-section mb-3">
-                        <img src="images/nearby-event-bird's-eye-view-img.png" alt="nird's-eye-view-img" class="nearby-event__img">
-                        <i class="d-flex justify-content-center align-items-center text-muted bi bi-heart rounded-pill nearby-event__like-icon"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div class="d-inline-block nearby-event__content-section">
-                            <h4 class="fw-normal m-0 nearby-event__sub-heading">SUN, NOV 15, 11:00 AM</h4>
-                            <h2 class="fw-bold m-0 nearby-event__heading">HOT AIR BALLOON FLIGHTS OVER THE DOHA</h2>
-                            <p class="text-muted fw-normal m-0 nearby-event__event-place">Doha</p>
-                        </div>
-                        <div>
-                            <a href="#" class="text-muted text-decoration-none"><i class="bi bi-share"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="nearby-event__events mb-xl-0 me-xl-0 mb-lg-4 me-lg-4 mb-md-4 me-md-4 mb-4">
-                    <div class="nearby-event__img-section mb-3">
-                        <img src="images/nearby-event-desert-img.png" alt="desert-img" class="nearby-event__img">
-                        <i class="d-flex justify-content-center align-items-center text-muted bi bi-heart rounded-pill nearby-event__like-icon"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div class="d-inline-block nearby-event__content-section">
-                            <h4 class="fw-normal m-0 nearby-event__sub-heading">SUN, NOV 15, 11:00 AM</h4>
-                            <h2 class="fw-bold m-0 nearby-event__heading">Full Day Desert Safari</h2>
-                            <p class="text-muted fw-normal m-0  nearby-event__event-place">Doha, Qatar</p>
-                        </div>
-                        <div>
-                            <a href="#" class="text-muted text-decoration-none"><i class="bi bi-share"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="nearby-event__events mb-xl-0 me-xl-0 mb-lg-4 me-lg-4 mb-md-4 me-md-4 mb-4">
-                    <div class="nearby-event__img-section mb-3">
-                        <img src="images/nearby-event-north-img.png" alt="north-img" class="nearby-event__img">
-                        <i class="d-flex justify-content-center align-items-center text-muted bi bi-heart rounded-pill nearby-event__like-icon"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div class="d-inline-block nearby-event__content-section">
-                            <h4 class="fw-normal m-0 nearby-event__sub-heading">SUN, NOV 15, 11:00 AM</h4>
-                            <h2 class="fw-bold m-0 nearby-event__heading">North of Qatar</h2>
-                            <p class="text-muted fw-normal m-0  nearby-event__event-place">Doha, Qatar</p>
-                        </div>
-                        <div>
-                            <a href="#" class="text-muted text-decoration-none"><i class="bi bi-share"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="nearby-event__events mb-xl-0 me-xl-0 mb-lg-4 me-lg-4 mb-md-4 me-md-4 mb-4">
-                    <div class="nearby-event__img-section mb-3">
-                        <img src="images/nearby-event-qatar-img.png" alt="qatar-img" class="nearby-event__img">
-                        <i class="d-flex justify-content-center align-items-center text-muted bi bi-heart rounded-pill nearby-event__like-icon"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div class="d-inline-block nearby-event__content-section">
-                            <h4 class="fw-normal m-0 nearby-event__sub-heading">SUN, NOV 15, 11:00 AM</h4>
-                            <h2 class="fw-bold m-0 nearby-event__heading">Qatar History VS Future</h2>
-                            <p class="text-muted fw-normal m-0 nearby-event__event-place">Doha, Qatar</p>
-                        </div>
-                        <div>
-                            <a href="#" class="text-muted text-decoration-none"><i class="bi bi-share"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Featured-event-section -->
-        <section class="row featured-event mb-5">
-            <div class="d-flex justify-content-between mb-2">
-                <h4 class="fw-bold m-0 featured-event__title">Featured Events</h4>
-                <a href="#" class="h6 m-0 align-self-center text-decoration-none featured-event__view-all">VIEW ALL</a>
-            </div>
-            <div class="d-flex mb-2">
-                <hr class="featured-event__line1 me-2 m-0 rounded-pill">
-                <hr class="featured-event__line2 m-0 rounded-pill">
-            </div>
-            <div class="d-flex justify-content-xl-between justify-content-center flex-wrap">
-                <div class="featured-event__events mb-xl-0 me-xl-0 mb-lg-4 me-lg-4 mb-md-4 me-md-4 mb-4">
-                    <div class="featured-event__img-section mb-3">
-                        <img src="images/featured-event-doha-img.png" alt="doha-img" class="featured-event__img">
-                        <i class="d-flex justify-content-center align-items-center text-muted bi bi-heart rounded-pill featured-event__like-icon"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div class="d-inline-block featured-event__content-section">
-                            <h4 class="fw-normal m-0 featured-event__sub-heading">SUN, NOV 15, 11:00 AM</h4>
-                            <h2 class="fw-bold m-0 featured-event__heading">Qatar Museum Tour</h2>
-                            <p class="text-muted fw-normal m-0 featured-event__event-place">Doha, Qatar</p>
-                        </div>
-                        <div>
-                            <a href="#" class="text-muted text-decoration-none"><i class="bi bi-share"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="featured-event__events mb-xl-0 me-xl-0 mb-lg-4 me-lg-4 mb-md-4 me-md-4 mb-4">
-                    <div class="featured-event__img-section mb-3">
-                        <img src="images/featured-event-qatar-museum-img.png" alt="qatar-museum-img" class="featured-event__img">
-                        <i class="d-flex justify-content-center align-items-center text-muted bi bi-heart rounded-pill featured-event__like-icon"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div class="d-inline-block featured-event__content-section">
-                            <h4 class="fw-normal m-0 featured-event__sub-heading">SUN, NOV 15, 11:00 AM</h4>
-                            <h2 class="fw-bold m-0 featured-event__heading">Longiness Global Champions Tour - Doha</h2>
-                            <p class="text-muted fw-normal m-0 featured-event__event-place">Blue Mountains, NSW</p>
-                        </div>
-                        <div>
-                            <a href="#" class="text-muted text-decoration-none"><i class="bi bi-share"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="featured-event__events mb-xl-0 me-xl-0 mb-lg-4 me-lg-4 mb-md-4 me-md-4 mb-4">
-                    <div class="featured-event__img-section mb-3">
-                        <img src="images/featured-event-qatar-sports-img.png" alt="qatar-sports-img" class="featured-event__img">
-                        <i class="d-flex justify-content-center align-items-center text-muted bi bi-heart rounded-pill featured-event__like-icon"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div class="d-inline-block featured-event__content-section">
-                            <h4 class="fw-normal m-0 featured-event__sub-heading">SUN, NOV 15, 11:00 AM</h4>
-                            <h2 class="fw-bold m-0 featured-event__heading">Qatar Sports and Educational Tour</h2>
-                            <p class="text-muted fw-normal m-0 featured-event__event-place">Surry Hills, Qatar</p>
-                        </div>
-                        <div>
-                            <a href="#" class="text-muted text-decoration-none"><i class="bi bi-share"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="featured-event__events mb-xl-0 me-xl-0 mb-lg-4 me-lg-4 mb-md-4 me-md-4 mb-4">
-                    <div class="featured-event__img-section mb-3">
-                        <img src="images/featured-event-sheikh-faisal-img.png" alt="sheikh-faisal-img" class="featured-event__img">
-                        <i class="d-flex justify-content-center align-items-center text-muted bi bi-heart rounded-pill featured-event__like-icon"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div class="d-inline-block featured-event__content-section">
-                            <h4 class="fw-normal m-0 featured-event__sub-heading">SUN, NOV 15, 11:00 AM</h4>
-                            <h2 class="fw-bold m-0 featured-event__heading">Shaikh faisal Camal Race track</h2>
-                            <p class="text-muted fw-normal m-0 featured-event__event-place">Surry Hills, Qatar</p>
-                        </div>
-                        <div>
-                            <a href="#" class="text-muted text-decoration-none"><i class="bi bi-share"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Featured-organizers-section -->
-        <section class="row featured-organizers mb-5">
-            <div class="d-flex justify-content-between mb-2">
-                <h4 class="fw-bold m-0 featured-organizers__title">Featured Organizers</h4>
-                <a href="#" class="h6 m-0 align-self-center text-decoration-none featured-organizers__view-all">VIEW ALL</a>
-            </div>
-            <div class="d-flex mb-2">
-                <hr class="featured-organizers__line1 me-2 m-0 rounded-pill">
-                <hr class="featured-organizers__line2 m-0 rounded-pill">
-            </div>
-            <div class="d-flex justify-content-xl-between justify-content-center flex-wrap">
-                <div class="d-flex flex-column justify-content-between align-items-center bg-white border rounded-3 p-2 mb-xl-0 me-xl-0 mb-lg-4 me-lg-4 mb-md-4 me-md-4 mb-sm-4 me-sm-4 mb-4 featured-organizers__events">
-                    <div class="d-flex flex-column align-items-center" style="width: 214px;">
-                        <a href="#" class="mb-2 align-self-end d-block"><i class="bi bi-x"></i></a>
-                        <img src="images/featured-organizers-green-leaders-img.png" alt="green-leaders-img" class="mb-4 featured-organizers__img">
-                        <h4 class="mb-2 fw-bold text-center featured-organizers__card-name">Qatar Green Leaders</h4>
-                        <p class="text-muted fw-normal featured-organizers__follwers">273 Follwers</p>
-                    </div>
-                    <div>
-                        <button type="button" class="mb-2 btn btn-outline-warning rounded-pill p-2 ps-4 pe-4 fw-bold featured-organizers__button">Follow</button>
-                    </div>
-                </div>
-                <div class="d-flex flex-column justify-content-between align-items-center bg-white border rounded-3 p-2 mb-xl-0 me-xl-0 mb-lg-4 me-lg-4 mb-md-4 me-md-4 mb-sm-4 me-sm-4 mb-4 featured-organizers__events">
-                    <div class="d-flex flex-column align-items-center" style="width: 214px;">
-                        <a href="#" class="mb-2 align-self-end d-block"><i class="bi bi-x"></i></a>
-                        <img src="images/featured-organizers-moc-dokh-img.png" alt="moc-doha-img" class="mb-4 featured-organizers__img">
-                        <h4 class="mb-2 fw-bold text-center featured-organizers__card-name">MOC Doha 2021 Managing..</h4>
-                        <p class="text-muted fw-normal featured-organizers__follwers">273 Follwers</p>
-                    </div>
-                    <div>
-                        <button type="button" class="mb-2 btn btn-outline-warning rounded-pill p-2 ps-4 pe-4 fw-bold featured-organizers__button">Follow</button>
-                    </div>
-                </div>
-                <div class="d-flex flex-column justify-content-between align-items-center bg-white border rounded-3 p-2 mb-xl-0 me-xl-0 mb-lg-4 me-lg-4 mb-md-4 me-md-4 mb-sm-4 me-sm-4 mb-4 featured-organizers__events">
-                    <div class="d-flex flex-column align-items-center" style="width: 214px;">
-                        <a href="#" class="mb-2 align-self-end d-block"><i class="bi bi-x"></i></a>
-                        <div class="mb-4 d-flex justify-content-center align-items-center rounded-pill featured-organizers__img-section">
-                            <img src="images/booket-icon.png" alt="green-leaders-img">
-                        </div>
-                        <h4 class="mb-2 fw-bold text-center featured-organizers__card-name">Waxdale Certified Launcher Program</h4>
-                        <p class="text-muted fw-normal featured-organizers__follwers">273 Follwers</p>
-                    </div>
-                    <div>
-                        <button type="button" class="mb-2 btn btn-outline-warning rounded-pill p-2 ps-4 pe-4 fw-bold featured-organizers__button">Follow</button>
-                    </div>
-                </div>
-                <div class="d-flex flex-column justify-content-between align-items-center bg-white border rounded-3 p-2 mb-xl-0 me-xl-0 mb-lg-4 me-lg-4 mb-md-4 me-md-4 mb-sm-4 me-sm-4 mb-4 featured-organizers__events">
-                    <div class="d-flex flex-column align-items-center" style="width: 214px;">
-                        <a href="#" class="mb-2 align-self-end d-block"><i class="bi bi-x"></i></a>
-                        <div class="mb-4 d-flex justify-content-center align-items-center rounded-pill featured-organizers__img-section">
-                            <img src="images/booket-icon.png" alt="green-leaders-img">
-                        </div>
-                        <h4 class="mb-2 fw-bold text-center featured-organizers__card-name">CH2 Agency Bangalore</h4>
-                        <p class="text-muted fw-normal featured-organizers__follwers">273 Follwers</p>
-                    </div>
-                    <div>
-                        <button type="button" class="mb-2 btn btn-outline-warning rounded-pill p-2 ps-4 pe-4 fw-bold featured-organizers__button">Follow</button>
-                    </div>
-                </div>
-                <div class="d-flex flex-column justify-content-between align-items-center bg-white border rounded-3 p-2 mb-xl-0 me-xl-0 mb-lg-4 me-lg-4 mb-md-4 me-md-4 mb-sm-4 me-sm-4 featured-organizers__events">
-                    <div class="d-flex flex-column align-items-center" style="width: 214px;">
-                        <a href="#" class="mb-2 align-self-end d-block"><i class="bi bi-x"></i></a>
-                        <div class="mb-4 d-flex justify-content-center align-items-center rounded-pill featured-organizers__img-section">
-                            <img src="images/booket-icon.png" alt="green-leaders-img">
-                        </div>
-                        <h4 class="mb-2 fw-bold text-center featured-organizers__card-name">CH2 Agency Bangalore</h4>
-                        <p class="text-muted fw-normal featured-organizers__follwers">273 Follwers</p>
-                    </div>
-                    <div>
-                        <button type="button" class="mb-2 btn btn-outline-warning rounded-pill p-2 ps-4 pe-4 fw-bold featured-organizers__button">Follow</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <!-- Footer-section -->
-    <footer class="row pt-lg-5 pb-lg-5 pb-4 pt-4 footer">
-        <section class="d-flex justify-content-lg-between justify-content-center flex-wrap footer__container">
-            <div class="mb-xl-0 me-xl-0 mb-lg-4 me-lg-4 mb-md-4 me-md-4 mb-sm-4 me-sm-4 mb-4" style="width: 230px;">
-                <a href="#" class="mb-2 d-inline-block">
-                    <img src="images/BookET-Logo.png" alt="BookET_Logo">
+                <div class="carousel-inner">
+                <a class="carousel-item active" href="javascript:void(0)">
+                    <img src="images/banner-img.png" alt="Manoj-Bajpayee-img" class="w-100 rounded-3">
                 </a>
-                <p class="mb-4 footer__booket-title">Are you an event company?</p>
-                <button type="button" class="btn btn-link text-decoration-none text-white rounded-pill fw-bold p-2 pe-4 ps-4 footer__booket-btn">Join Us</button>
-            </div>
-            <ol class="footer__order-list p-0 m-0 mb-xl-0 me-xl-0 mb-lg-4 me-lg-4 mb-md-4 me-md-4 mb-sm-4 me-sm-4 mb-4" style="width: 230px;">
-                <li><h6 class="text-white fw-bold mb-2">Quick Link</h6></li>
-                <li><a href="#" class="fs-6 fw-normal text-decoration-none footer__links">About us</a></li>
-                <li><a href="#" class="fs-6 fw-normal text-decoration-none footer__links">Partners</a></li>
-                <li><a href="#" class="fs-6 fw-normal text-decoration-none footer__links">Contact us</a></li>
-                <li><a href="#" class="fs-6 fw-normal text-decoration-none footer__links">Privacy Policy</a></li>
-                <li><a href="#" class="fs-6 fw-normal text-decoration-none footer__links">Terms of services</a></li>
-                <li><a href="#" class="fs-6 fw-normal text-decoration-none footer__links">Warranty policy</a></li>
-            </ol>
-            <ol class="footer__order-list p-0 m-0 mb-xl-0 me-xl-0 mb-lg-4 me-lg-4 mb-md-4 me-md-4 mb-sm-4 me-sm-4 mb-4" style="width: 230px;">
-                <li><h6 class="text-white fw-bold mb-2">Get in Touch</h6></li>
-                <li>
-                    <a href="#" class="text-decoration-none">
-                        <i class="bi bi-geo-alt-fill"></i>
-                        <span class="fs-6 fw-normal footer__links">Sherin Towers 857, Sydney</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="text-decoration-none">
-                        <i class="bi bi-envelope"></i>
-                        <span class="fs-6 fw-normal footer__links">info@booket.com</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="text-decoration-none">
-                        <i class="bi bi-telephone-fill"></i>
-                        <span class="fs-6 fw-normal footer__links">+91-9876543210</span>
-                    </a>
-                </li>
-            </ol>
-            <div class="mb-xl-0 me-xl-0 mb-lg-4 me-lg-4 mb-md-4 me-md-4 mb-sm-4 me-sm-4" style="min-width: 230px; max-width: 310px;">
-                <h6 class="fw-bold text-white mb-2">Follow us</h6>
-                <div class="d-flex mb-4">
-                    <a href="https://www.instagram.com" target="_blank"><i class="bi bi-instagram text-white me-2 fs-5"></i></a>
-                    <a href="https://www.twitter.com" target="_blank"><i class="bi bi-twitter text-white me-2 fs-5"></i></a>
-                    <a href="https://www.facebook.com" target="_blank"><i class="bi bi-facebook text-white fs-5"></i></a>
+                <a class="carousel-item" href="javascript:void(0)">
+                    <img src="images/banner-img.png" alt="Manoj-Bajpayee-img" class="w-100 rounded-3">
+                </a>
+                <a class="carousel-item" href="javascript:void(0)">
+                    <img src="images/banner-img.png" alt="Manoj-Bajpayee-img" class="w-100 rounded-3">
+                </a>
                 </div>
-                <h6 class="fw-bold text-white mb-2">Download App</h6>
-                <div class="d-lg-flex flex-lg-row d-flex flex-column">
-                    <a href="https://www.apple.com/in/app-store" target="_blank"><img src="images/App_Store.png" alt="App_Store" class="me-lg-2 mb-lg-0 mb-3"></a>
-                    <a href="https://play.google.com" target="_blank"><img src="images/Play_store.png" alt="Play_store" class="w-80"></a>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <i class="bi bi-arrow-left-circle d-none d-md-block" aria-hidden="true"></i>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <i class="bi bi-arrow-right-circle d-none d-md-block" aria-hidden="true"></i>
+                <span class="visually-hidden">Next</span>
+                </button>
+            </section>
+            <!-- Event-category-section -->
+            <section class="row event-category mb-5">
+                <div class="d-flex justify-content-between mb-2">
+                    <h4 class="fw-bold m-0 event-category__title">Event Category</h4>
+                    <a href="javascript:void(0)" class="h6 m-0 align-self-center text-decoration-none event-category__view-all">VIEW ALL</a>
                 </div>
-            </div>
-        </section>
-    </footer>
+                <div class="d-flex mb-2">
+                    <hr class="event-category__line1 me-2 m-0 rounded-3">
+                    <hr class="event-category__line2 m-0 rounded-3">
+                </div>
+                <div class="d-flex justify-content-lg-between justify-content-md-start justify-content-between flex-wrap flex-xl-nowrap">
+                    <div class="d-flex flex-column justify-content-between mb-xl-0 me-xl-3 me-lg-0 ms-lg-0 me-md-5 mb-4 rounded-3 flex-grow-sm-1 event-category__cards">
+                        <div class="event-category__card-body">
+                            <h5 class="m-0 fw-normal h4 text-white">Music</h5>
+                            <p class="m-0 mb-2 fw-normal text-white event-category__description">24 Events Nearby</p>
+                        </div>
+                        <div class="d-flex justify-content-between event-category__section">
+                            <a href="javascript:void(0)" class="d-flex justify-content-center align-items-center rounded-pill event-category__arrow"><i class="bi bi-arrow-right"></i></a>
+                            <img src="images/event-category-music-img.png" alt="music-img" class="mb-sm-1 event-category__event-img">
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column justify-content-between mb-xl-0 me-xl-3 me-lg-0 ms-lg-0 me-md-5 ms-md-4 mb-4 rounded-3 flex-grow-sm-1 event-category__cards">
+                        <div class="event-category__card-body">
+                            <h4 class="m-0 fw-normal h4 text-white">Business & Startups</h4>
+                            <p class="m-0 fw-normal text-white event-category__description">36 Events Nearby</p>
+                        </div>
+                        <div class="d-flex justify-content-between event-category__section">
+                            <a href="javascript:void(0)" class="d-flex justify-content-center align-items-center rounded-pill event-category__arrow"><i class="bi bi-arrow-right"></i></a>
+                            <img src="images/event-category-business-img.png" alt="business-img" class="event-category__event-img">
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column justify-content-between mb-xl-0 me-xl-3 me-lg-0 ms-lg-0 ms-md-3 mb-4 rounded-3 flex-grow-sm-1 event-category__cards">
+                        <div class="event-category__card-body">
+                            <h4 class="m-0 fw-normal h4 text-white">Arts & Culture</h4>
+                            <p class="m-0 mb-2 fw-normal text-white event-category__description">36 Events Nearby</p>
+                        </div>
+                        <div class="d-flex justify-content-between event-category__section">
+                            <a href="javascript:void(0)" class="d-flex justify-content-center align-items-center rounded-pill event-category__arrow"><i class="bi bi-arrow-right"></i></a>
+                            <img src="images/event-category-art-img.png" alt="art-img" class="mb-sm-1 event-category__event-img">
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column justify-content-between mb-xl-0 me-xl-3 me-lg-0 ms-lg-0 me-md-5 mb-md-0 mb-4 rounded-3 flex-grow-sm-1 event-category__cards">
+                        <div class="event-category__card-body">
+                            <h4 class="m-0 fw-normal h4 text-white">Film & Media</h4>
+                            <p class="m-0 mb-2 fw-normal text-white event-category__description">36 Events Nearby</p>
+                        </div>
+                        <div class="d-flex justify-content-between event-category__section">
+                            <a href="javascript:void(0)" class="d-flex justify-content-center align-items-center rounded-pill event-category__arrow"><i class="bi bi-arrow-right"></i></a>
+                            <img src="images/event-category-social-ideas-img.png" alt="social-ideas-img" class="mb-sm-1 event-category__event-img">
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column justify-content-between ms-lg-0 ms-md-4 rounded-3 flex-grow-sm-1 event-category__cards">
+                        <div class="event-category__card-body">
+                            <h4 class="m-0 fw-normal h4 text-white">Food & Drink</h4>
+                            <p class="m-0 mb-2 fw-normal text-white event-category__description">36 Events Nearby</p>
+                        </div>
+                        <div class="d-flex justify-content-between event-category__section">
+                            <a href="javascript:void(0)" class="d-flex justify-content-center align-items-center rounded-pill event-category__arrow"><i class="bi bi-arrow-right"></i></a>
+                            <img src="images/event-category-special-event-img.png" alt="special-event-img" class="mb-sm-1 event-category__event-img">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Popular-event-section -->
+            <section class="row popular-event mb-5">
+                <div class="d-flex justify-content-between mb-2">
+                    <h4 class="fw-bold m-0 popular-event__title">Popular Event</h4>
+                    <a href="javascript:void(0)" class="h6 m-0 align-self-center text-decoration-none popular-event__view-all">VIEW ALL</a>
+                </div>
+                <div class="d-flex mb-2">
+                    <hr class="popular-event__line1 me-2 m-0 rounded-3">
+                    <hr class="popular-event__line2 m-0 rounded-3">
+                </div>
+                <div class="d-flex justify-content-center justify-content-sm-between justify-content-md-start justify-content-lg-between justify-content-xl-start flex-wrap flex-xl-nowrap">
+                    <div class="card border-0 flex-lg-grow-1 flex-md-grow-0 flex-grow-1 me-xl-3 ms-xl-0 mb-xl-0 me-lg-0 ms-lg-0 me-md-3 mb-4 popular-event__cards">
+                        <div class="card-img-top popular-event__img-section mb-3">
+                            <img src="images/popular-events-festival-img.png" alt="festival-img" class="w-100">
+                            <i class="d-flex justify-content-center align-items-center text-muted bi bi-heart rounded-pill popular-event__like-icon"></i>
+                        </div>
+                        <div class="card-body d-flex justify-content-between p-0 popular-event__card-body">
+                            <div class="popular-event__content-section">
+                                <h6 class="card-text m-0 popular-event__sub-heading">SUN, NOV 15, 11:00 AM</h6>
+                                <h4 class="card-title m-0 popular-event__heading">Great Qatar Food Festival</h4>
+                                <p class="card-text m-0 popular-event__event-place">The Pearl Qatar</p>
+                            </div>
+                            <a href="javascript:void(0)" class="text-muted text-decoration-none popular-event__share-icon">
+                                <i class="bi bi-share"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card border-0 flex-lg-grow-1 flex-md-grow-0 flex-grow-1 me-xl-3 ms-xl-1 mb-xl-0 me-lg-0 ms-lg-0 me-md-3 mb-4 popular-event__cards">
+                        <div class="card-img-top popular-event__img-section mb-3">
+                            <img src="images/popular-event-boat-img.png" alt="boat-img" class="w-100">
+                            <i class="d-flex justify-content-center align-items-center text-muted bi bi-heart rounded-pill popular-event__like-icon"></i>
+                        </div>
+                        <div class="card-body d-flex justify-content-between p-0 popular-event__card-body">
+                            <div class="popular-event__content-section">
+                                <h4 class="card-text m-0 popular-event__sub-heading">SUN, NOV 15, 11:00 AM</h4>
+                                <h2 class="card-title m-0 popular-event__heading">QAWARIB Qatar International Boat Show 2021</h2>
+                                <p class="card-text m-0 popular-event__event-place">AI Shaqab</p>
+                            </div>
+                            <a href="javascript:void(0)" class="text-muted text-decoration-none popular-event__share-icon">
+                                <i class="bi bi-share"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card border-0 flex-lg-grow-1 flex-md-grow-0 flex-grow-1 me-xl-3 ms-xl-1 mb-xl-0 me-lg-0 ms-lg-0 mb-md-0 mb-sm-0 mb-4 popular-event__cards">
+                        <div class="card-img-top popular-event__img-section mb-3">
+                            <img src="images/popular-event-horse-img.png" alt="horse-img" class="w-100">
+                            <i class="d-flex justify-content-center align-items-center text-muted bi bi-heart rounded-pill popular-event__like-icon"></i>
+                        </div>
+                        <div class="card-body d-flex justify-content-between p-0 popular-event__card-body">
+                            <div class="popular-event__content-section">
+                                <h4 class="card-text popular-event__sub-heading">SUN, NOV 15, 11:00 AM</h4>
+                                <h2 class="card-title m-0 popular-event__heading">Commercial Bank CHI AI SHAQAB Presented by Longines</h2>
+                                <p class="card-text m-0 popular-event__event-place">Mosman Park, Sydney</p>
+                            </div>
+                            <a href="javascript:void(0)" class="text-muted text-decoration-none popular-event__share-icon">
+                                <i class="bi bi-share"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card border-0 flex-lg-grow-1 flex-md-grow-0 flex-grow-1 ms-xl-1 popular-event__cards">
+                        <div class="card-img-top popular-event__img-section mb-3">
+                            <img src="images/popular-event-tasty-street-img.png" alt="tasty-street-img" class="w-100">
+                            <i class="d-flex justify-content-center align-items-center text-muted bi bi-heart rounded-pill popular-event__like-icon"></i>
+                        </div>
+                        <div class="card-body d-flex justify-content-between p-0 popular-event__card-body">
+                            <div class="popular-event__content-section">
+                                <h4 class="card-text m-0 popular-event__sub-heading">SUN, NOV 15, 11:00 AM</h4>
+                                <h2 class="card-title m-0 popular-event__heading">Tasty Street Qatar at Katara Cultural Village</h2>
+                                <p class="card-text m-0 popular-event__event-place">AI Gannas</p>
+                            </div>
+                            <a href="javascript:void(0)" class="text-muted text-decoration-none popular-event__share-icon">
+                                <i class="bi bi-share"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Recommended-event-section -->
+            <section class="row recommended-event mb-5">
+                <div class="d-flex justify-content-between mb-2">
+                    <h4 class="fw-bold me-sm-0 m-0 me-2 recommended-event__title">Recommended Events</h4>
+                    <a href="javascript:void(0)" class="h6 m-0 align-self-center text-decoration-none recommended-event__view-all">VIEW ALL</a>
+                </div>
+                <div class="d-flex mb-2">
+                    <hr class="recommended-event__line1 me-2 m-0 rounded-3">
+                    <hr class="recommended-event__line2 m-0 rounded-3">
+                </div>
+                <div class="d-flex justify-content-center justify-content-sm-between justify-content-md-start justify-content-lg-between justify-content-xl-start flex-wrap flex-xl-nowrap">
+                    <div class="card border-0 flex-lg-grow-1 flex-md-grow-0 flex-grow-1 me-xl-3 ms-xl-0 mb-xl-0 me-lg-0 ms-lg-0 me-md-3 mb-4 recommended-event__cards">
+                        <div class="card-img-top recommended-event__img-section mb-3">
+                            <img src="images/recommended-event-handicrafts-img.png" alt="handicrafts-img" class="w-100">
+                            <i class="d-flex justify-content-center align-items-center text-muted bi bi-heart rounded-pill recommended-event__like-icon"></i>
+                        </div>
+                        <div class="card-body d-flex justify-content-between p-0 recommended-event__card-body">
+                            <div class="recommended-event__content-section">
+                                <h4 class="card-text m-0 recommended-event__sub-heading">SUN, NOV 15, 11:00 AM</h4>
+                                <h2 class="card-title m-0 recommended-event__heading">The International Handicrafts & Traditional Productions Cultural ..</h2>
+                                <p class="card-text m-0 recommended-event__event-place">Mosman Park, Sydney</p>
+                            </div>
+                            <a href="javascript:void(0)" class="text-muted text-decoration-none recommended-event__share-icon">
+                                <i class="bi bi-share"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card border-0 flex-lg-grow-1 flex-md-grow-0 flex-grow-1 me-xl-3 ms-xl-1 mb-xl-0 me-lg-0 ms-lg-0 me-md-3 mb-4 recommended-event__cards">
+                        <div class="card-img-top recommended-event__img-section mb-3">
+                            <img src="images/recommended-event-expo-img.png" alt="expo-img" class="w-100">
+                            <i class="d-flex justify-content-center align-items-center text-muted bi bi-heart rounded-pill recommended-event__like-icon"></i>
+                        </div>
+                        <div class="card-body d-flex justify-content-between p-0 recommended-event__card-body">
+                            <div class="recommended-event__content-section">
+                                <h4 class="card-text m-0 recommended-event__sub-heading">SUN, NOV 15, 11:00 AM</h4>
+                                <h2 class="card-title m-0 recommended-event__heading">International Horticultural Expo Doha</h2>
+                                <p class="card-text m-0 recommended-event__event-place">The Pearl Qatar</p>
+                            </div>
+                            <a href="javascript:void(0)" class="text-muted text-decoration-none recommended-event__share-icon">
+                                <i class="bi bi-share"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card border-0 flex-lg-grow-1 flex-md-grow-0 flex-grow-1 me-xl-3 ms-xl-1 mb-xl-0 me-lg-0 ms-lg-0 mb-md-0 mb-sm-0 mb-4 recommended-event__cards">
+                        <div class="card-img-top recommended-event__img-section mb-3">
+                            <img src="images/recommended-event-farmers-img.png" alt="farmers-img" class="w-100">
+                            <i class="d-flex justify-content-center align-items-center text-muted bi bi-heart rounded-pill recommended-event__like-icon"></i>
+                        </div>
+                        <div class="card-body d-flex justify-content-between p-0 recommended-event__card-body">
+                            <div class="recommended-event__content-section">
+                                <h4 class="card-text m-0 recommended-event__sub-heading">SUN, NOV 15, 11:00 AM</h4>
+                                <h2 class="card-title m-0 recommended-event__heading">Torba Farmers Market 2020</h2>
+                                <p class="card-text m-0 recommended-event__event-place">Ceremonial Court, Education City</p>
+                            </div>
+                            <a href="javascript:void(0)" class="text-muted text-decoration-none recommended-event__share-icon">
+                                <i class="bi bi-share"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card border-0 flex-lg-grow-1 flex-md-grow-0 flex-grow-1 ms-xl-1 recommended-event__cards">
+                        <div class="card-img-top recommended-event__img-section mb-3">
+                            <img src="images/recommended-event-sea-caves-img.png" alt="sea-caves-img" class="w-100">
+                            <i class="d-flex justify-content-center align-items-center text-muted bi bi-heart rounded-pill recommended-event__like-icon"></i>
+                        </div>
+                        <div class="card-body d-flex justify-content-between p-0 recommended-event__card-body">
+                            <div class="recommended-event__content-section">
+                                <h4 class="card-text m-0 recommended-event__sub-heading">SUN, NOV 15, 11:00 AM</h4>
+                                <h2 class="card-title m-0 recommended-event__heading">Sea Caves Water Park</h2>
+                                <p class="card-text m-0 recommended-event__event-place">Desert Falls Water and Adventure park</p>
+                            </div>
+                            <a href="javascript:void(0)" class="text-muted text-decoration-none recommended-event__share-icon">
+                                <i class="bi bi-share"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Nearby-event-section -->
+            <section class="row nearby-event mb-5">
+                <div class="d-flex justify-content-between mb-2">
+                    <h4 class="fw-bold m-0 nearby-event__title">Nearby Events</h4>
+                    <a href="javascript:void(0)" class="h6 m-0 align-self-center text-decoration-none nearby-event__view-all">VIEW ALL</a>
+                </div>
+                <div class="d-flex mb-2">
+                    <hr class="nearby-event__line1 me-2 m-0 rounded-3">
+                    <hr class="nearby-event__line2 m-0 rounded-3">
+                </div>
+                <div class="d-flex justify-content-center justify-content-sm-between justify-content-md-start justify-content-lg-between justify-content-xl-start flex-wrap flex-xl-nowrap">
+                    <div class="card border-0 flex-lg-grow-1 flex-md-grow-0 flex-grow-1 me-xl-3 ms-xl-0 mb-xl-0 me-lg-0 ms-lg-0 me-md-3 mb-4 nearby-event__cards">
+                        <div class="card-img-top nearby-event__img-section mb-3">
+                            <img src="images/nearby-event-bird's-eye-view-img.png" alt="nird's-eye-view-img" class="w-100">
+                            <i class="d-flex justify-content-center align-items-center text-muted bi bi-heart rounded-pill nearby-event__like-icon"></i>
+                        </div>
+                        <div class="card-body d-flex justify-content-between p-0 nearby-event__card-body">
+                            <div class="nearby-event__content-section">
+                                <h4 class="card-text m-0 nearby-event__sub-heading">SUN, NOV 15, 11:00 AM</h4>
+                                <h2 class="card-title m-0 nearby-event__heading">HOT AIR BALLOON FLIGHTS OVER THE DOHA</h2>
+                                <p class="card-text m-0 nearby-event__event-place">Doha</p>
+                            </div>
+                            <a href="javascript:void(0)" class="text-muted text-decoration-none nearby-event__share-icon">
+                                <i class="bi bi-share"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card border-0 flex-lg-grow-1 flex-md-grow-0 flex-grow-1 me-xl-3 ms-xl-1 mb-xl-0 me-lg-0 ms-lg-0 me-md-3 mb-4 nearby-event__cards">
+                        <div class="card-img-top nearby-event__img-section mb-3">
+                            <img src="images/nearby-event-desert-img.png" alt="desert-img" class="w-100">
+                            <i class="d-flex justify-content-center align-items-center text-muted bi bi-heart rounded-pill nearby-event__like-icon"></i>
+                        </div>
+                        <div class="card-body d-flex justify-content-between p-0 nearby-event__card-body">
+                            <div class="nearby-event__content-section">
+                                <h4 class="card-text m-0 nearby-event__sub-heading">SUN, NOV 15, 11:00 AM</h4>
+                                <h2 class="card-title m-0 nearby-event__heading">Full Day Desert Safari</h2>
+                                <p class="card-title m-0  nearby-event__event-place">Doha, Qatar</p>
+                            </div>
+                            <a href="javascript:void(0)" class="text-muted text-decoration-none nearby-event__share-icon">
+                                <i class="bi bi-share"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card border-0 flex-lg-grow-1 flex-md-grow-0 flex-grow-1 me-xl-3 ms-xl-1 mb-xl-0 me-lg-0 ms-lg-0 mb-md-0 mb-sm-0 mb-4 nearby-event__cards">
+                        <div class="card-img-top nearby-event__img-section mb-3">
+                            <img src="images/nearby-event-north-img.png" alt="north-img" class="w-100">
+                            <i class="d-flex justify-content-center align-items-center text-muted bi bi-heart rounded-pill nearby-event__like-icon"></i>
+                        </div>
+                        <div class="card-body d-flex justify-content-between p-0 nearby-event__card-body">
+                            <div class="nearby-event__content-section">
+                                <h4 class="card-text m-0 nearby-event__sub-heading">SUN, NOV 15, 11:00 AM</h4>
+                                <h2 class="card-title m-0 nearby-event__heading">North of Qatar</h2>
+                                <p class="card-text m-0  nearby-event__event-place">Doha, Qatar</p>
+                            </div>
+                            <a href="javascript:void(0)" class="text-muted text-decoration-none nearby-event__share-icon">
+                                <i class="bi bi-share"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card border-0 flex-lg-grow-1 flex-md-grow-0 flex-grow-1 ms-xl-1 nearby-event__cards">
+                        <div class="card-img-top nearby-event__img-section mb-3">
+                            <img src="images/nearby-event-qatar-img.png" alt="qatar-img" class="w-100">
+                            <i class="d-flex justify-content-center align-items-center text-muted bi bi-heart rounded-pill nearby-event__like-icon"></i>
+                        </div>
+                        <div class="card-body d-flex justify-content-between p-0 nearby-event__card-body">
+                            <div class="nearby-event__content-section">
+                                <h4 class="card-text m-0 nearby-event__sub-heading">SUN, NOV 15, 11:00 AM</h4>
+                                <h2 class="card-title m-0 nearby-event__heading">Qatar History VS Future</h2>
+                                <p class="card-title m-0 nearby-event__event-place">Doha, Qatar</p>
+                            </div>
+                            <a href="javascript:void(0)" class="text-muted text-decoration-none nearby-event__share-icon">
+                                <i class="bi bi-share"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Featured-event-section -->
+            <section class="row featured-event mb-5">
+                <div class="d-flex justify-content-between mb-2">
+                    <h4 class="fw-bold m-0 featured-event__title">Featured Events</h4>
+                    <a href="javascript:void(0)" class="h6 m-0 align-self-center text-decoration-none featured-event__view-all">VIEW ALL</a>
+                </div>
+                <div class="d-flex mb-2">
+                    <hr class="featured-event__line1 me-2 m-0 rounded-3">
+                    <hr class="featured-event__line2 m-0 rounded-3">
+                </div>
+                <div class="d-flex justify-content-center justify-content-sm-between justify-content-md-start justify-content-lg-between justify-content-xl-start flex-wrap flex-xl-nowrap">
+                    <div class="card border-0 flex-lg-grow-1 flex-md-grow-0 flex-grow-1 me-xl-3 ms-xl-0 mb-xl-0 me-lg-0 ms-lg-0 me-md-3 mb-4 featured-event__cards">
+                        <div class="card-img-top featured-event__img-section mb-3">
+                            <img src="images/featured-event-doha-img.png" alt="doha-img" class="w-100">
+                            <i class="d-flex justify-content-center align-items-center text-muted bi bi-heart rounded-pill featured-event__like-icon"></i>
+                        </div>
+                        <div class="card-body d-flex justify-content-between p-0 featured-event__card-body">
+                            <div class="featured-event__content-section">
+                                <h4 class="card-text m-0 featured-event__sub-heading">SUN, NOV 15, 11:00 AM</h4>
+                                <h2 class="card-title m-0 featured-event__heading">Qatar Museum Tour</h2>
+                                <p class="card-text m-0 featured-event__event-place">Doha, Qatar</p>
+                            </div>
+                            <a href="javascript:void(0)" class="text-muted text-decoration-none featured-event__share-icon">
+                                <i class="bi bi-share"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card border-0 flex-lg-grow-1 flex-md-grow-0 flex-grow-1 me-xl-3 ms-xl-1 mb-xl-0 me-lg-0 ms-lg-0 me-md-3 mb-4 featured-event__cards">
+                        <div class="card-img-top featured-event__img-section mb-3">
+                            <img src="images/featured-event-qatar-museum-img.png" alt="qatar-museum-img" class="w-100">
+                            <i class="d-flex justify-content-center align-items-center text-muted bi bi-heart rounded-pill featured-event__like-icon"></i>
+                        </div>
+                        <div class="card-body d-flex justify-content-between p-0 featured-event__card-body">
+                            <div class="featured-event__content-section">
+                                <h4 class="card-text m-0 featured-event__sub-heading">SUN, NOV 15, 11:00 AM</h4>
+                                <h2 class="card-title m-0 featured-event__heading">Longiness Global Champions Tour - Doha</h2>
+                                <p class="card-text m-0 featured-event__event-place">Blue Mountains, NSW</p>
+                            </div>
+                            <a href="javascript:void(0)" class="text-muted text-decoration-none featured-event__share-icon">
+                                <i class="bi bi-share"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card border-0 flex-lg-grow-1 flex-md-grow-0 flex-grow-1 me-xl-3 ms-xl-1 mb-xl-0 me-lg-0 ms-lg-0 mb-md-0 mb-sm-0 mb-4 featured-event__cards">
+                        <div class="card-img-top featured-event__img-section mb-3">
+                            <img src="images/featured-event-qatar-sports-img.png" alt="qatar-sports-img" class="w-100">
+                            <i class="d-flex justify-content-center align-items-center text-muted bi bi-heart rounded-pill featured-event__like-icon"></i>
+                        </div>
+                        <div class="card-body d-flex justify-content-between p-0 featured-event__card-body">
+                            <div class="featured-event__content-section">
+                                <h4 class="card-text m-0 featured-event__sub-heading">SUN, NOV 15, 11:00 AM</h4>
+                                <h2 class="card-title m-0 featured-event__heading">Qatar Sports and Educational Tour</h2>
+                                <p class="card-text m-0 featured-event__event-place">Surry Hills, Qatar</p>
+                            </div>
+                            <a href="javascript:void(0)" class="text-muted text-decoration-none featured-event__share-icon">
+                                <i class="bi bi-share"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card border-0 flex-lg-grow-1 flex-md-grow-0 flex-grow-1 ms-xl-1 featured-event__cards">
+                        <div class="card-img-top featured-event__img-section mb-3">
+                            <img src="images/featured-event-sheikh-faisal-img.png" alt="sheikh-faisal-img" class="w-100">
+                            <i class="d-flex justify-content-center align-items-center text-muted bi bi-heart rounded-pill featured-event__like-icon"></i>
+                        </div>
+                        <div class="card-body d-flex justify-content-between p-0 featured-event__card-body">
+                            <div class="featured-event__content-section">
+                                <h4 class="card-text m-0 featured-event__sub-heading">SUN, NOV 15, 11:00 AM</h4>
+                                <h2 class="card-title m-0 featured-event__heading">Shaikh faisal Camal Race track</h2>
+                                <p class="card-text m-0 featured-event__event-place">Surry Hills, Qatar</p>
+                            </div>
+                            <a href="javascript:void(0)" class="text-muted text-decoration-none featured-event__share-icon">
+                                <i class="bi bi-share"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Featured-organizers-section -->
+            <section class="row featured-organizers mb-5">
+                <div class="d-flex justify-content-between mb-2">
+                    <h4 class="fw-bold m-0 featured-organizers__title">Featured Organizers</h4>
+                    <a href="javascript:void(0)" class="h6 m-0 align-self-center text-decoration-none featured-organizers__view-all">VIEW ALL</a>
+                </div>
+                <div class="d-flex mb-2">
+                    <hr class="featured-organizers__line1 me-2 m-0 rounded-3">
+                    <hr class="featured-organizers__line2 m-0 rounded-3">
+                </div>
+                <div class="d-flex flex-wrap flex-xl-nowrap justify-content-between justify-content-md-start">
+                    <div class="d-flex flex-column justify-content-between align-items-center flex-md-grow-0 flex-sm-grow-1 card text-center fade show alert bg-white border mb-4 ms-xxl-0 me-xxl-4 ms-xl-0 me-xl-3 mb-xl-0 ms-lg-0 me-lg-4 me-md-5 me-sm-0 featured-organizers__card">
+                        <div class="d-flex flex-column align-items-center w-100">
+                            <button class="mb-4 align-self-end d-block featured-organizers__card-close-btn" data-bs-dismiss="alert" aria-label="Close">&#10005;</button>
+                            <img src="images/featured-organizers-green-leaders-img.png" alt="green-leaders-img" class="card-img mb-3 featured-organizers__card-img">
+                            <h5 class="card-title mb-2 text-center featured-organizers__card-title">Qatar Green Leaders</h5>
+                            <p class="card-text fw-normal featured-organizers__card-text">273 Follwers</p>
+                        </div>
+                        <div>
+                            <a href="javascript:void(0)" class="btn btn-outline-warning rounded-pill mb-4 p-3 ps-5 pe-5 featured-organizers__card-button">Follow</a>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column justify-content-between align-items-center flex-md-grow-0 flex-sm-grow-1 card text-center fade show alert bg-white border mb-4 ms-xxl-0 me-xxl-4 ms-xl-0 me-xl-3 mb-xl-0 ms-lg-4 me-lg-4 ms-md-5 me-md-5 featured-organizers__card">
+                        <div class="d-flex flex-column align-items-center w-100">
+                            <button class="mb-4 align-self-end d-block featured-organizers__card-close-btn" data-bs-dismiss="alert" aria-label="Close">&#10005;</button>
+                            <img src="images/featured-organizers-moc-dokh-img.png" alt="moc-doha-img" class="card-img mb-3 featured-organizers__card-img">
+                            <h5 class="card-title mb-2 text-center featured-organizers__card-title">MOC Doha 2021 Managing..</h5>
+                            <p class="card-text fw-normal featured-organizers__card-text">273 Follwers</p>
+                        </div>
+                        <div>
+                            <a href="javascript:void(0)" class="btn btn-outline-warning rounded-pill mb-4 p-3 ps-5 pe-5 featured-organizers__card-button">Follow</a>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column justify-content-between align-items-center flex-xxl-grow-0 flex-xl-grow-0 flex-lg-grow-0 flex-sm-grow-1 flex-grow-0 card text-center fade show alert bg-white border mb-4 ms-xxl-0 me-xxl-4 ms-xl-0 me-xl-3 mb-xl-0 ms-lg-4 me-lg-4 ms-md-4 me-sm-0 featured-organizers__card">
+                        <div class="d-flex flex-column align-items-center w-100">
+                            <button class="mb-4 align-self-end d-block featured-organizers__card-close-btn" data-bs-dismiss="alert" aria-label="Close">&#10005;</button>
+                            <div class="card-img mb-3 d-flex justify-content-center align-items-center rounded-pill featured-organizers__card-img-bg-section">
+                                <img src="images/booket-icon.png" alt="booket-img" class="featured-organizers__card-booket-img">
+                            </div>
+                            <h5 class="card-title mb-2 text-center featured-organizers__card-title">Waxdale Certified Launcher Program</h5>
+                            <p class="card-text fw-normal featured-organizers__card-text">273 Follwers</p>
+                        </div>
+                        <div>
+                            <a href="javascript:void(0)" class="btn btn-outline-warning rounded-pill mb-4 p-3 ps-5 pe-5 featured-organizers__card-button">Follow</a>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column justify-content-between align-items-center flex-md-grow-0 flex-sm-grow-1 card text-center fade show alert bg-white border mb-4 ms-xxl-0 me-xxl-4 ms-xl-0 me-xl-3 mb-xl-0 ms-lg-3 me-lg-0 me-md-5 featured-organizers__card">
+                        <div class="d-flex flex-column align-items-center w-100">
+                            <button class="mb-4 align-self-end d-block featured-organizers__card-close-btn" data-bs-dismiss="alert" aria-label="Close">&#10005;</button>
+                            <div class="card-img mb-3 d-flex justify-content-center align-items-center rounded-pill featured-organizers__card-img-bg-section">
+                                <img src="images/booket-icon.png" alt="booket-img" class="featured-organizers__card-booket-img">
+                            </div>
+                            <h5 class="card-title mb-2 text-center featured-organizers__card-title">CH2 Agency Bangalore</h5>
+                            <p class="card-text fw-normal featured-organizers__card-text">273 Follwers</p>
+                        </div>
+                        <div>
+                            <a href="javascript:void(0)" class="btn btn-outline-warning rounded-pill mb-4 p-3 ps-5 pe-5 featured-organizers__card-button">Follow</a>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column justify-content-between align-items-center flex-md-grow-0 flex-sm-grow-1 card text-center fade show alert bg-white border m-0 ms-xxl-0 me-xxl-0 ms-xl-0 me-xl-0 me-xl-0 ms-lg-0 me-lg-0 ms-md-5 featured-organizers__card">
+                        <div class="d-flex flex-column align-items-center w-100">
+                            <button class="mb-4 align-self-end d-block featured-organizers__card-close-btn" data-bs-dismiss="alert" aria-label="Close">&#10005;</button>
+                            <div class="card-img mb-3 d-flex justify-content-center align-items-center rounded-pill featured-organizers__card-img-bg-section">
+                                <img src="images/booket-icon.png" alt="booket-img" class="featured-organizers__card-booket-img">
+                            </div>
+                            <h5 class="card-title mb-2 text-center featured-organizers__card-title">CH2 Agency Bangalore</h5>
+                            <p class="card-text fw-normal featured-organizers__card-text">273 Follwers</p>
+                        </div>
+                        <div>
+                            <a href="javascript:void(0)" class="btn btn-outline-warning rounded-pill mb-4 p-3 ps-5 pe-5 featured-organizers__card-button">Follow</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Footer-section -->
+        <footer class="row pt-lg-5 pb-lg-5 pb-4 pt-4 footer">
+            <section class="d-flex justify-content-md-between justify-content-around flex-wrap footer__container">
+                <div class="mb-xl-0 me-xl-0 mb-lg-4 me-lg-4 mb-4" style="width: 230px;">
+                    <a href="javascript:void(0)" class="mb-2 d-inline-block">
+                        <img src="images/BookET-Logo.png" alt="BookET_Logo">
+                    </a>
+                    <p class="mb-4 footer__booket-title">Are you an event company?</p>
+                    <a href="javascript:void(0)" class="btn btn-outline-warning text-white rounded-pill p-3 ps-5 pe-5 footer__booket-btn">JoinUs</a>
+                </div>
+                <ol class="footer__order-list p-0 mb-xl-0 me-xl-0 mb-lg-4 me-lg-4 mb-md-4 me-md-4 mb-sm-4 me-sm-4 mb-4" style="width: 230px;">
+                    <li><h6 class="text-white fw-bold mb-2">Quick Link</h6></li>
+                    <li class="mb-1"><a href="javascript:void(0)" class="fs-6 fw-normal text-decoration-none footer__links">About us</a></li>
+                    <li class="mb-1"><a href="javascript:void(0)" class="fs-6 fw-normal text-decoration-none footer__links">Partners</a></li>
+                    <li class="mb-1"><a href="javascript:void(0)" class="fs-6 fw-normal text-decoration-none footer__links">Contact us</a></li>
+                    <li class="mb-1"><a href="javascript:void(0)" class="fs-6 fw-normal text-decoration-none footer__links">Privacy Policy</a></li>
+                    <li class="mb-1"><a href="javascript:void(0)" class="fs-6 fw-normal text-decoration-none footer__links">Terms of services</a></li>
+                    <li><a href="javascript:void(0)" class="fs-6 fw-normal text-decoration-none footer__links">Warranty policy</a></li>
+                </ol>
+                <ol class="footer__order-list p-0 mb-xl-0 me-xl-0 mb-lg-4 me-lg-4 mb-md-4 me-md-4 mb-sm-4 me-sm-4 mb-4" style="width: 235px;">
+                    <li><h6 class="text-white fw-bold mb-2">Get in Touch</h6></li>
+                    <li class="mb-1">
+                        <a href="javascript:void(0)" class="text-decoration-none">
+                            <i class="bi bi-geo-alt-fill me-1"></i>
+                            <span class="fs-6 fw-normal footer__links">Sherin Towers 857, Sydney</span>
+                        </a>
+                    </li>
+                    <li class="mb-1">
+                        <a href="javascript:void(0)" class="text-decoration-none">
+                            <i class="bi bi-envelope me-1"></i>
+                            <span class="fs-6 fw-normal footer__links">info@booket.com</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" class="text-decoration-none">
+                            <i class="bi bi-telephone-fill me-1"></i>
+                            <span class="fs-6 fw-normal footer__links">+91-9876543210</span>
+                        </a>
+                    </li>
+                </ol>
+                <div class="mb-xl-0 me-xl-0 mb-lg-4 me-lg-4 mb-md-4 me-md-4 mb-sm-4 me-sm-4" style="min-width: 230px; max-width: 310px;">
+                    <h6 class="fw-bold text-white mb-2">Follow us</h6>
+                    <div class="d-flex mb-4">
+                        <a href="https://www.instagram.com" target="_blank"><i class="bi bi-instagram text-white me-4 fs-5"></i></a>
+                        <a href="https://www.twitter.com" target="_blank"><i class="bi bi-twitter text-white me-4 fs-5"></i></a>
+                        <a href="https://www.facebook.com" target="_blank"><i class="bi bi-facebook text-white fs-5"></i></a>
+                    </div>
+                    <h6 class="fw-bold text-white mb-2">Download App</h6>
+                    <div class="d-lg-flex flex-lg-row d-flex flex-column">
+                        <a href="https://www.apple.com/in/app-store" target="_blank"><img src="images/App_Store.png" alt="App_Store" class="me-lg-2 mb-lg-0 mb-3"></a>
+                        <a href="https://play.google.com" target="_blank"><img src="images/Play_store.png" alt="Play_store" class="w-80"></a>
+                    </div>
+                </div>
+            </section>
+        </footer>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
